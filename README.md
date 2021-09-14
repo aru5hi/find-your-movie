@@ -1,3 +1,5 @@
+# find-your-movie
+(WIP)An app that, with the help of OMDB API, displays the list of movies matching your search
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
