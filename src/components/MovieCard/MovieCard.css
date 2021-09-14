@@ -1,0 +1,58 @@
+.movie-card-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    width: 12rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-image {
+    width: 100%;
+    height: 15rem;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    max-height: 4.5;
+    background: #373a6d;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.movie-title {
+    display: flex;
+    max-height: 4.5;
+    background: #373a6d;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+.title-text {
+    padding: 1rem 0 0.5rem 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 7rem;
+}
+.year {
+    padding: 0 1rem 0.7rem 1rem;
+    color: #ffffff80;
+    font-size: 0.7rem;
+}
+
+.type-ribbon {
+    position: absolute;
+    top: 13.5rem;
+    left: 0;
+}
+.type-ribbon-movie {
+    color: #07a18d;
+}
+
+.type-ribbon-tv {
+    color: #f1ae1c;
+}

@@ -1,0 +1,36 @@
+.ribbon{
+    position:relative;
+    width: 50px;
+    height: 12px;
+    padding: 0 0.5rem;
+    background: #07a18d;
+  }
+  .label{
+    position: relative;
+    color: #fff;
+    font-weight:800;
+    text-align:center;
+    font-size: 0.6rem;
+    padding: 0.1rem;
+  }
+  .ribbon:before{
+    content:'';
+    position:absolute;
+    left: 64px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 0 0;
+    border-color: #07a18d transparent transparent transparent;
+  }
+  .ribbon:after{
+    content:'';
+    position:absolute;
+    left: 64px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 0 7px;
+    border-color: transparent transparent transparent #07a18d;
+  }

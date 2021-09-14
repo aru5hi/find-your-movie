@@ -1,0 +1,19 @@
+.footer-container {
+    display: flex;
+    background-color: #373a6d;
+    color: #fff;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.app-name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff70
+}
+
+.link {
+    color: rgb(117, 163, 223)
+}
