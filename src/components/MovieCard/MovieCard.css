@@ -5,6 +5,7 @@
     width: 12rem;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .movie-image {
@@ -36,7 +37,8 @@
     padding: 1rem 0 0.5rem 1rem;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 7rem;
+    overflow: hidden;
+    width: 11rem;
 }
 .year {
     padding: 0 1rem 0.7rem 1rem;
@@ -46,7 +48,7 @@
 
 .type-ribbon {
     position: absolute;
-    top: 13.5rem;
+    top: 0.5rem;
     left: 0;
 }
 .type-ribbon-movie {
