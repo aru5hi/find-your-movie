@@ -3,7 +3,7 @@
     width: 50px;
     height: 12px;
     padding: 0 0.5rem;
-    background: #07a18d;
+    background: #373a6d;
   }
   .label{
     position: relative;
@@ -21,7 +21,7 @@
     height: 0;
     border-style: solid;
     border-width: 7px 7px 0 0;
-    border-color: #07a18d transparent transparent transparent;
+    border-color: #373a6d transparent transparent transparent;
   }
   .ribbon:after{
     content:'';
@@ -32,5 +32,5 @@
     height: 0;
     border-style: solid;
     border-width: 7px 0 0 7px;
-    border-color: transparent transparent transparent #07a18d;
+    border-color: transparent transparent transparent #373a6d;
   }
