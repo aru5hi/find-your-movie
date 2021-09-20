@@ -28,7 +28,7 @@ const SearchBar: React.FunctionComponent<any> = (props) => {
 }
 
 const mapStateToProps = (state: any) => ({
-    text: state.movieList.text
+    text: state.appState.text
 })
 
 export const SearchBarRedux =  connect(mapStateToProps, {searchMovie, fetchMovies})(SearchBar);

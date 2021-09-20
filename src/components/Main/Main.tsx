@@ -26,8 +26,8 @@ class MainComponent extends React.Component<any> {
 }
 
 const mapStateToProps = (state: any) => ({
-    movieList: state.movieList.movieList,
-    isLoading: state.movieList.isLoading
+    movieList: state.appState.movieList,
+    isLoading: state.appState.isLoading
 });
 
 export default connect(mapStateToProps)(MainComponent);
