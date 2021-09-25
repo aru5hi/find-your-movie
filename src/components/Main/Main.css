@@ -2,11 +2,8 @@ html, body {
     font-size: 14px;
     background: #1f1d3f;
 }
-.loader-container {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+
+.body-container {
+    min-height: 66vh;
+    color: #fff;
 }

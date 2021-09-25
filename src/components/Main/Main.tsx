@@ -1,33 +1,27 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Footer } from '../Footer/Footer';
 import { Header } from '../Header/Header';
-import { MovieGrid } from '../MovieGrid/MovieGrid';
+import { EmptyGridState } from '../MovieGrid/EmptyGridState';
+import MovieGrid from '../MovieGrid/MovieGrid';
+import MovieOverview from '../MovieOverview/MovieOverview';
 import './Main.css';
-import { connect } from 'react-redux'
-import { EmptyGridState } from './EmptyGridState';
-import { Loader } from '../ComponentLibrary/Loader/Loader';
 
 class MainComponent extends React.Component<any> {
     render() {
-        return <div>
-            <Header/>
-            { this.props.isLoading ?
-            <div className="loader-container">
-                <Loader/>
-                Finding the matches...
-            </div> :
-            this.props.movieList && this.props.movieList.length ? 
-            <MovieGrid movieList={this.props.movieList}/> :
-            <EmptyGridState/>
-            }
-            <Footer/>
-        </div>;
+        return <Router>
+            <div>
+                <Header/>
+                <div className="body-container">
+                    <Route exact path="/" component={EmptyGridState} />
+                    <Route exact path="/search/:text" component={MovieGrid} />
+                    <Route exact path="/movie/:imdbId" component={MovieOverview} />
+                    <Route exact path="/series/:imdbId" component={MovieOverview} />
+                </div>
+                <Footer/>
+            </div>
+        </Router>;
     }
 }
 
-const mapStateToProps = (state: any) => ({
-    movieList: state.appState.movieList,
-    isLoading: state.appState.isLoading
-});
-
-export default connect(mapStateToProps)(MainComponent);
+export default MainComponent;

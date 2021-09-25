@@ -15,11 +15,11 @@
     width: 2rem;
 }
 
-.app-name {
+.app-name>a {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: #ffffff;
-
+    text-decoration: none;
 }
 
 .search-bar {

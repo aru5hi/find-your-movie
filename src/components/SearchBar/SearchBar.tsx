@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchBar.css';
 import searchIcon from '../../assets/search-icon.png';
-import { searchMovie, fetchMovies } from '../../actions/searchActions';
+import { searchMovie } from '../../actions/searchActions';
 import { connect } from 'react-redux';
 
 
@@ -16,7 +16,7 @@ const SearchBar: React.FunctionComponent<any> = (props) => {
 
     const onSubmitSearch = (event: any) => {
         event.preventDefault();
-        props.fetchMovies(props.text);
+        window.location.href=`/search/${props.text}`;
     }
 
     return <form onSubmit={onSubmitSearch} className="search-bar-container">
@@ -31,4 +31,4 @@ const mapStateToProps = (state: any) => ({
     text: state.appState.text
 })
 
-export const SearchBarRedux =  connect(mapStateToProps, {searchMovie, fetchMovies})(SearchBar);
+export const SearchBarRedux =  connect(mapStateToProps, {searchMovie})(SearchBar);
