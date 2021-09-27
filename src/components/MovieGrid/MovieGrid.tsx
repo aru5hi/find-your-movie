@@ -16,9 +16,11 @@ interface MovieGridProps {
 }
 
 export const MovieGrid: React.FunctionComponent<MovieGridProps & RouteComponentProps<{text: string}>> = (props) => {
+    const { fetchMovies } = props;
     useEffect(() => {
-        props.fetchMovies(props.match.params.text);
-    }, [])
+        fetchMovies(props.match.params.text);
+    }, [fetchMovies, props.match.params.text]);
+
     const renderMovieGrid = () => {
         return props.movieList.map( (movie, index) => <MovieCard key={index} {...movie}/>)
     }

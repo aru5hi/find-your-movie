@@ -11,9 +11,11 @@
     width: 60%;
     overflow: hidden;
 }
+
 img {
     width: 100%;
 }
+
 .movie-data {
     width: 100%;
     display: flex;
@@ -25,7 +27,6 @@ img {
 .title {
     font-size: 2rem;
     color: #fff;
-    
 }
 
 .inline-container {
@@ -38,6 +39,13 @@ img {
     gap: 0.3rem;
     padding-right: 0.8rem;
     border-right: 1px solid #ffffff70;
+}
+
+.type {
+    display: inline-block;
+    padding-right: 0.8rem;
+    color: #ffffff95;
+    font-size: 1.2rem;
 }
 
 .runtime {
@@ -63,6 +71,16 @@ img {
 .plot {
     font-size: 1rem;
 }
+
+.loader-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 @media only screen and (min-width: 768px) {
     .overview-container {
         margin: 5rem 5rem 0;

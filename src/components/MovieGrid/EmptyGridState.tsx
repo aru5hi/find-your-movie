@@ -10,7 +10,7 @@ export const EmptyGridState: React.FunctionComponent<EmptyStateProps> = (props) 
     <div className="null-container">
         <img src={nullStateImage} alt="Search for your movies" className="null-state-image"/>
         <div className="null-title">
-            Nothing to show. Try searching for {props.isNoResultState ? 'for something else' : 'your favourite movie'}.
+            Nothing to show. Try searching for {props.isNoResultState ? 'something else' : 'your favourite movie'}.
         </div>
     </div>
     <style dangerouslySetInnerHTML={{__html: `

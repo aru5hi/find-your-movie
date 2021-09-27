@@ -53,7 +53,7 @@ const actionIdentifier = (state: MainState = initialState, action: Action) => {
         case FETCH_MOVIE_DETAILS:
             newState = {
                 ...state,
-                movieDetails: action.payload as MovieOverviewData
+                ...action.payload as MainState
             }
             return newState;
         default:

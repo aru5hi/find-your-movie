@@ -27,9 +27,17 @@ export const fetchMovies = (searchText: string) => (dispatch: (actionParams: Act
 }
 
 export const fetchMovieDetails = (id: string) => (dispatch: (actionParams: Action) => any) => {
+    dispatch({
+        type: TOGGLE_LOADING,
+        payload: true
+    });
+
     axios.get(`http://www.omdbapi.com/?apikey=${apiKey.apiKey}&i=${id}`)
     .then((response) => dispatch({
         type: FETCH_MOVIE_DETAILS,
-        payload: response.data
+        payload: {
+            movieDetails: response.data,
+            isLoading: false
+        }
     }));
 }
