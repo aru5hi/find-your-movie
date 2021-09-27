@@ -2,6 +2,7 @@
   "name": "find-your-movie",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aru5hi.github.io/find-your-movie",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -23,6 +24,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.9"
+    "@types/react-router-dom": "^5.1.9",
+    "gh-pages": "^3.2.3"
   }
 }
