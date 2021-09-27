@@ -25,17 +25,17 @@ export const MovieGrid: React.FunctionComponent<MovieGridProps & RouteComponentP
         return props.movieList.map( (movie, index) => <MovieCard key={index} {...movie}/>)
     }
 
-    return <div className="movie-grid-container">
+    return <>
         {props.isLoading ?
             <div className="loader-container">
                 <Loader/>
                 Finding the matches...
             </div> :
             props.movieList && props.movieList.length ? 
-            renderMovieGrid() :
+            <div className="movie-grid-container">{renderMovieGrid()}</div> :
             <EmptyGridState isNoResultState/>
         }
-    </div>;
+    </>;
 }
 
 const mapStateToProps = (state: any) => ({

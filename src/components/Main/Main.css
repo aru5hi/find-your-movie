@@ -6,4 +6,5 @@ html, body {
 .body-container {
     min-height: 66vh;
     color: #fff;
+    margin: auto;
 }
