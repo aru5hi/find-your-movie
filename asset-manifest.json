@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/find-your-movie/static/css/main.02f72f6f.chunk.css",
+    "main.js": "/find-your-movie/static/js/main.a3006f07.chunk.js",
+    "main.js.map": "/find-your-movie/static/js/main.a3006f07.chunk.js.map",
+    "runtime-main.js": "/find-your-movie/static/js/runtime-main.69a44a71.js",
+    "runtime-main.js.map": "/find-your-movie/static/js/runtime-main.69a44a71.js.map",
+    "static/js/2.47b448a5.chunk.js": "/find-your-movie/static/js/2.47b448a5.chunk.js",
+    "static/js/2.47b448a5.chunk.js.map": "/find-your-movie/static/js/2.47b448a5.chunk.js.map",
+    "static/js/3.6f631ae2.chunk.js": "/find-your-movie/static/js/3.6f631ae2.chunk.js",
+    "static/js/3.6f631ae2.chunk.js.map": "/find-your-movie/static/js/3.6f631ae2.chunk.js.map",
+    "index.html": "/find-your-movie/index.html",
+    "static/css/main.02f72f6f.chunk.css.map": "/find-your-movie/static/css/main.02f72f6f.chunk.css.map",
+    "static/js/2.47b448a5.chunk.js.LICENSE.txt": "/find-your-movie/static/js/2.47b448a5.chunk.js.LICENSE.txt",
+    "static/media/imdb-icon.3245cef3.png": "/find-your-movie/static/media/imdb-icon.3245cef3.png",
+    "static/media/landing-null-state.f7f71f7a.gif": "/find-your-movie/static/media/landing-null-state.f7f71f7a.gif",
+    "static/media/play.daad5194.png": "/find-your-movie/static/media/play.daad5194.png",
+    "static/media/popcorn.4442fc64.png": "/find-your-movie/static/media/popcorn.4442fc64.png",
+    "static/media/rotten-tomato.ffd9741a.png": "/find-your-movie/static/media/rotten-tomato.ffd9741a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69a44a71.js",
+    "static/js/2.47b448a5.chunk.js",
+    "static/css/main.02f72f6f.chunk.css",
+    "static/js/main.a3006f07.chunk.js"
+  ]
+}
