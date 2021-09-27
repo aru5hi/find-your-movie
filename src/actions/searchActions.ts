@@ -16,7 +16,7 @@ export const fetchMovies = (searchText: string) => (dispatch: (actionParams: Act
         payload: true
     });
 
-    axios.get(`http://www.omdbapi.com/?apikey=${apiKey.apiKey}&s=${searchText}`)
+    axios.get(`https://www.omdbapi.com/?apikey=${apiKey.apiKey}&s=${searchText}`)
     .then((response) => dispatch({
         type: FETCH_MOVIE,
         payload: {
@@ -32,7 +32,7 @@ export const fetchMovieDetails = (id: string) => (dispatch: (actionParams: Actio
         payload: true
     });
 
-    axios.get(`http://www.omdbapi.com/?apikey=${apiKey.apiKey}&i=${id}`)
+    axios.get(`https://www.omdbapi.com/?apikey=${apiKey.apiKey}&i=${id}`)
     .then((response) => dispatch({
         type: FETCH_MOVIE_DETAILS,
         payload: {

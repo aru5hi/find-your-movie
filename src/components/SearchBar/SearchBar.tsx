@@ -16,7 +16,7 @@ const SearchBar: React.FunctionComponent<any> = (props) => {
 
     const onSubmitSearch = (event: any) => {
         event.preventDefault();
-        window.location.href=`/find-your-movie/search/${props.text}`;
+        window.location.href=`/search/${props.text}`;
     }
 
     return <form onSubmit={onSubmitSearch} className="search-bar-container">

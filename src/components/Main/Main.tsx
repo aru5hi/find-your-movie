@@ -13,10 +13,10 @@ class MainComponent extends React.Component<any> {
             <div>
                 <Header/>
                 <div className="body-container">
-                    <Route exact path="/find-your-movie" component={EmptyGridState} />
-                    <Route exact path="/find-your-movie/search/:text" component={MovieGrid} />
-                    <Route exact path="/find-your-movie/movie/:imdbId" component={MovieOverview} />
-                    <Route exact path="/find-your-movie/series/:imdbId" component={MovieOverview} />
+                    <Route exact path="/" component={EmptyGridState} />
+                    <Route exact path="/search/:text" component={MovieGrid} />
+                    <Route exact path="/movie/:imdbId" component={MovieOverview} />
+                    <Route exact path="/series/:imdbId" component={MovieOverview} />
                 </div>
                 <Footer/>
             </div>

@@ -2,7 +2,7 @@
   "name": "find-your-movie",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aru5hi.github.io/find-your-movie",
+  "homepage": "https://find-your-movie-2021.herokuapp.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
