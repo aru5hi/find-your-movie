@@ -7,12 +7,12 @@ import './Header.css';
 export const Header: React.FunctionComponent = () => {
     return <div className="header-container">
         <div>
-            <Link to="/">
+            <Link to="/find-your-movie">
                 <img src={logo} alt="Logo" className="logo"/>
             </Link>
         </div>
         <div className="app-name">
-        <Link to="/">
+        <Link to="/find-your-movie">
             Find Your Movie
             </Link> 
         </div>
